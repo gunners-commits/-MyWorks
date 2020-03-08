@@ -1,0 +1,621 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style-type: none;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    
+    
+}
+
+/* nav */
+
+nav{
+    color: #4E5983;
+    height: 110px;
+    margin: 0 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.logo {
+    cursor: pointer;
+    align-self: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #160647;
+}
+
+#logoImg{
+
+    width: 15px;
+    height: 15px;
+}
+
+.logo p {
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.navigation p{
+    margin: 0 10px;
+    cursor: pointer;
+    display: inline-block; 
+}
+
+.navigation p:hover{
+    transition: all .4s ease;
+    color: #160647;
+}
+
+.navigation{
+    align-self: center;
+}
+
+.contact{
+    align-self: center;
+    
+
+}
+
+.contact > button:nth-child(2){
+    font-weight: bold;
+    background-color: #F3EFFF;
+
+}
+
+.contact > button:nth-child(1){
+    background-color: white;
+
+}
+
+.contact > button{
+    color: #4E5983;
+    border-radius: 5px;
+    padding: 18px 18px;
+    border: 1px solid transparent;
+}
+
+.contact > button:hover {
+    border: 1px solid #160647; 
+}
+/* main */
+
+main{
+    position: relative;
+    background-image: url(img/main.png);
+    height: 750px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.main-text {
+    margin: 0 auto;
+    width: 80%;
+    line-height: 60px;
+    color: white;
+}
+
+.main-text p {
+    line-height: 60px;
+}
+
+.main-text h1 {
+     padding-top: 115px;
+     font-size: 50px;
+}
+
+.money-math{
+    position: relative;
+    z-index: 999;
+    padding: 100px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px 8%;
+    background: #FFFFFF;
+    opacity: .85;
+    border: 4px solid #F7F8FD;
+    box-sizing: border-box;
+    border-radius: 26px;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    grid-auto-columns: minmax(100px, auto);
+    
+}
+
+.money-math .title{
+    justify-self:flex-start;
+    grid-row: 1;
+        text-align: left
+}
+
+.money-math .title:nth-child(1){
+    grid-column: 1;
+}
+
+.money-math .title:nth-child(2){
+    grid-column: 2;
+}
+
+.money-math .title:nth-child(2) h2 {
+    display: inline-block;
+} 
+
+.give{
+
+    text-align: left;
+    justify-self:flex-start;
+    grid-column: 1/2;
+    grid-row: 2;
+    width: 100%;
+}
+
+.give-2{
+    text-align: left;
+    justify-self: flex-start;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.arrows{
+    width: 33%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.get{
+    grid-column:3;
+    grid-row: 2;
+}
+
+.get button{
+    color: white;
+    width: 150px;
+    height: 60px;
+    padding: 20px 30px;
+    background: linear-gradient(163.94deg, #562EC2 29.59%, #A07EFE 73.59%);
+    opacity: 0.8;
+    border-radius: 9px;
+    border: none;
+}
+
+.money-math span{
+    opacity: .4;
+}
+
+.val-2{
+    width: 55% !important;
+}
+
+.val{
+    display:flex;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-2{
+    width: 80%;
+}
+
+
+.val p{
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.val img{
+    cursor: pointer;
+}
+
+.val i{
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+}
+
+.form input{
+    padding: 0;
+    font-size: 20px;
+    border: none;
+    width: 30%;
+    padding-right: 50px;
+    border-right: 1px solid #CFD4DA;
+}
+
+#shadow-1{
+    background: #FFFFFF;
+    position: absolute;
+    bottom: -35px;
+    height: 70px;
+    opacity: 0.2;
+    text-align: center;
+    width: 97%;
+    border: 4px solid #F7F8FD;
+    box-sizing: border-box;
+    border-radius: 26px 26px 0px 0px;
+    transform: rotate(-180deg);
+}
+
+#point-view{
+    position: absolute;
+    top: 160px;
+    left: 120px;
+}
+
+#right-view{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#left-view{
+    position: absolute;
+    left: 0;
+    top: 300px;
+}
+
+/* info - 1 */
+#info-for-you{
+    margin: 80px 8%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.card-information{
+    height: 450px;
+    align-self: center;
+    width: 300px;
+}
+
+.card-information img{
+    align-self: flex-end;
+    height: 200px;
+    position: relative;
+    left: -16px;  
+}
+
+.card-information h4{
+    color: #4E5983;
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 22px;
+}
+
+.card-information p {
+    line-height: 32px;
+    margin-top: 20px;
+    color:#4E5983;  
+}
+
+/* info - 2 */
+#info-2{
+    position: relative;
+    margin-top: 150px;
+}
+
+#point-style{
+    
+    z-index: 0;
+    position: absolute;
+    top: -200px;
+    left: 0;
+}
+
+
+.main-block-info{
+    display: flex;
+    padding: 8% 10%;
+    background-color: white;
+    position: relative;
+    margin: 0 8%;
+    border: 4px solid #F7F8FD;
+    box-sizing: border-box;
+    border-radius: 26px;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.main-block-info div:nth-child(1){
+    width: 50%;
+    min-width: 35%;
+}
+
+.for-title{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 132.4%;
+    color: #160647;
+}
+
+.main-block-info div p{
+   color: #4E5983;
+    opacity: 0.7;
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 166.5%;
+}
+
+.main-block-info div img{
+    background-size: cover;
+    width:655px;
+    height: 335px;
+}
+
+/* валюта - currency */
+
+.currency{
+    position: relative;
+    background: linear-gradient(180deg, #EFF2FA 0%, rgba(255, 255, 255, 0) 96.57%);
+    opacity: 0.8;
+    height: auto;
+    top: -250px;
+    padding-top: 350px;
+}
+
+.currency-info{
+    margin: 0 8%;
+}
+
+.title-info{
+    text-align: center;
+}
+
+.more-information{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.more-information-card{
+    display: flex;
+    width: 25%;
+    height: 52px;
+    margin-top: 115px;
+}
+
+#bg-1,#bg-2,#bg-3,#bg-4,#bg-5,#bg-6,#bg-7,#bg-8{
+    display: inline-block;
+    text-align: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.more-information-card div img{
+    margin: 15px;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+}
+
+#bg-1{
+    background: rgba(255,239,205, 1);
+}
+
+#bg-2{
+    background: rgba(230,235,249, 1);
+}
+
+#bg-3{
+    background: rgba(255,244,220, 1);
+}
+
+#bg-4{
+    background: rgba(199,246,203, 1);
+}
+
+#bg-5{
+    background: rgba(186,213,185, 1);
+}
+
+#bg-6{
+    background: rgba(228,246,254, 1);
+}
+
+#bg-7{
+    background: rgba(252,234,233, 1);
+}
+
+#bg-8{
+    background: rgba(253,242,228, 1);
+}
+
+.name{
+    display: block;
+    color: #A4AABF;
+}
+
+.number{
+    color: #160647;
+    font-size: 20px;
+}
+
+.name, .number{
+    line-height: 22px;
+    margin-left: 35px;
+}
+
+.more-information-card div:nth-child(2){
+    align-self: center;
+}
+
+/* Что говорят он нас клиенты block*/
+
+.main-comment{
+    margin:100px 8%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.namePerson{
+    font-size: 20px;
+    color: #160647;
+}
+
+.date{
+    color: #838BA8;
+    margin-left: 30px;
+}
+
+.contact-viewers{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.text-person{
+    font-size: 18px;
+    line-height: 166%;
+    color: #4E5983;
+    opacity: 0.7;
+    width: 490px;
+}
+
+.commentaries{
+    height: 250px;
+    width: 500px;
+}
+
+#left{
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    right: 80px;
+}
+
+#right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+/* начать сейчас трейдить block */
+
+.nowTrade{
+    margin: 200px 8%;
+    background: linear-gradient(163.51deg, #562EC2 29.59%, #A07EFE 73.59%);
+    border-radius: 17px;
+    padding: 80px  60px;
+    display: flex;
+    justify-content: flex-end;
+    height: 400px;
+    position: relative;
+}
+
+.description{
+    width:560px;
+    z-index: 99;
+    margin-top: 50px;
+}
+
+.imgTrade{
+    width: 900px;
+    height:710px;
+    background-size: cover;
+    position: absolute;
+    top: -200px;
+    left: 0px;
+    background-image: url(img/tradeBlock.png);
+   
+}
+
+.description h4{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 132.4%;
+    color: #FFFFFF;
+}
+
+.description p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 166.5%;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.description button{
+    margin-top: 50px;
+    background: #FFFFFF;
+    opacity: 0.9;
+    width: 225px;
+    height: 75px;
+    border-radius: 10px;
+    color:#9F7DFD;
+    border: none;
+    text-align: center;
+    padding: 25px 35px;
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+
+/* footer */
+
+footer{
+    margin: 0 8%;
+}
+
+footer img{
+    cursor: pointer;
+    margin-left: 15px;
+}
+footer .logo{
+    position: relative;
+}
+
+footer .logo > span{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 300px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #838BA8;
+    cursor: auto;
+    margin-bottom: 35px;
+}
+
+.content-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+@media (min-width:768px) and (max-width:1200px){
+
+}
+
+@media (max-width:767px){
+    
+}
