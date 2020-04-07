@@ -1,0 +1,93 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  resize: none; }
+
+nav {
+  width: 100%;
+  z-index: 999;
+  background-color: black;
+  max-height: 120px;
+  position: absolute !important;
+  top: 0;
+  z-index: 99;
+  left: 0; }
+  nav #navMain > p {
+    cursor: pointer; }
+
+header {
+  position: relative;
+  top: 0;
+  height: 100%; }
+  header .carousel img {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover; }
+  header .carousel-inner {
+    padding: 0; }
+  header .carousel-caption {
+    bottom: 35% !important; }
+    header .carousel-caption h5 {
+      min-height: 96px;
+      font-size: 40px; }
+    header .carousel-caption p {
+      min-height: 48px; }
+
+article:first-of-type {
+  padding: 50px 0 0;
+  background: url("../assets/housesix-копия 1.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+article:last-of-type {
+  padding: 50px 0 0;
+  background: url("../assets/builder22 1.png");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.formBlock {
+  background-color: #F8F8F8;
+  padding-top: 50px; }
+
+.w-60 {
+  width: 60% !important; }
+
+.w-80 {
+  width: 80%; }
+
+textarea {
+  resize: none !important; }
+
+.btnDark {
+  background-color: black !important; }
+
+footer {
+  background-color: black; }
+  footer > div {
+    padding: 65px 0 50px; }
+
+@media (max-width: 768px) {
+  .carousel img {
+    height: 650px !important;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;}
+  #caption {
+    bottom: 15% !important; }
+  #caption2 {
+    bottom: 15% !important; }
+  #caption3 {
+    bottom: 15% !important; }
+  .formBlock form div {
+    width: 100% !important; }
+  .formBlock p {
+    width: 100% !important; } }
